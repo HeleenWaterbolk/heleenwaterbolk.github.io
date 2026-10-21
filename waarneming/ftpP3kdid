@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pleinen</title>
+    <style>
+        :root {
+            --accent-color: lime;
+            --text-color: black;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 12pt;
+            color: var(--text-color);
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Navigatie elementen */
+        .nav-home {
+            position: absolute;
+            top: 0;
+            left: -50px;
+        }
+
+        .nav-arrows {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .arrow {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 30pt;
+            line-height: 1;
+        }
+
+        /* Links */
+        a {
+            color: var(--text-color);
+        }
+
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        a.noUL {
+            text-decoration: none;
+            letter-spacing: .10em;
+            line-height: 16pt;
+        }
+
+        /* Typografie */
+        h1 {
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        p {
+            margin: 0 0 15px 0;
+            line-height: 1.5;
+        }
+
+        /* Video / Media container - Centraal geplaatst */
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        video {
+            width: 100%;
+            max-width: 480px; /* Pas aan naar wens */
+            height: auto;
+            background-color: #000;
+            display: block;
+        }
+
+        .caption {
+            font-size: 10pt;
+            color: #555;
+            margin-top: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="nav-home">
+            <a href="../../home/index.html">
+                <img src="../../site/homebox.gif" width="25" height="25" alt="Home" style="border:0;">
+            </a>
+        </div>
+
+        <div class="nav-arrows">
+            <a class="arrow" href="index.html">&lt;</a>
+            <a class="arrow" href="klassiekmotief.html">&gt;</a>
+        </div>
+
+        <main>
+            <h1>Op pleinen en straten</h1>
+            <br>
+            <p>
+                Men verzamelt zich, de emoties in het kwadraat, op pleinen en straten. Wat men wil zeggen en laten zien, wordt omhoog gehouden in tekst of beeld. De demonstratieborden zijn vaak aan twee kanten beschreven, beide halfruimtes bedienend. Ze steken uit. Zoals de vlaggen.<br><br>
+                Twee tegengestelde krachten zijn aan het werk. Worden de massa's groter, zijn er gevechten, is er strijd en verstrengeling, dan spreidt men zich uit over de straten. En omgekeerd. - De pleinen met zijn uitwaaierende straten zijn 
+                <a class="noUL" href="../portfolio/newyork1988/affect/index.html">de houders of mallen</a> 
+                waarin zich de verhevigde emoties gieten.
+            </p>
+
+            <div class="media-container">
+                <video controls preload="metadata">
+                    <source src="http://www.waterbolk.com/waarneming/mov/1.mov" type="video/quicktime">
+                    <source src="http://www.waterbolk.com/waarneming/mov/1.mov" type="video/mp4">
+                    Uw browser ondersteunt deze videotag niet.
+                </video>
+                <div class="caption">Van TV scherm, New York. Beeld uit Madrid</div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
